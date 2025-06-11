@@ -183,51 +183,36 @@
     line-height: 1.5;
   }
 
-  .final-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 40px;
-    background-color: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
-    color: #ff841f;
+  .my_class_0020 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    align-items: start;
   }
   
-  .final-left,
-  .final-middle,
-  .final-right {
-    flex: 1;
-  }
-  
-  .final-left h3 {
-    font-family: 'Playfair Display', serif;
+  .titre {
     font-style: italic;
-    font-size: 28px;
-    margin-bottom: 400px;
+    font-weight: bold;
+    color: #ff7a00;
+    font-size: 2em;
   }
   
+  .mission, .client {
+    color: #ff7a00;
+    font-family: 'YourFont';
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
   .signature {
-    font-size: 32px;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   .signature .email {
-    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 24px;
-  }
-  
-  .final-middle ul {
-    margin-top: 100px;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .final-middle li {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  
-  .final-right p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 15px;
+    font-family:'Cabin';
   }
