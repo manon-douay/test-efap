@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PORTFOLIO MANON DOUAY</title>
+    <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" href="style.css">
+    <!-- Import de la police serif pour le style du texte principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+   
 </head>
 <body>
-    <div class="navbar">
-        <img src="logo v2.png" class="logo">
-        <div class="links">
-          <a href="" class="link">Présentation</a>
-          <a href="" class="link">Team</a>
-          <a href="" class="link">Contact</a>
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <!-- Logo à gauche -->
+            <div class="logo">MANON DOUAY</div>
+            <!-- Liens centraux -->
+            <ul class="nav-links">
+                <li><a href="#">A PROPOS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">MON TRAVAIL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Portfolio -->
+    <section class="portfolio">
+        <div class="portfolio-text">PORTFOLIO <br> PORTFOLIO</div>
+        <div class="portfolio-image">
+            <img src="images/1.jpg" alt="Image de présentation">
         </div>
-      </div>
-      <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92181.05523497706!2d11.240967900000001!3d43.77995815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56a680d2d6ad%3A0x93d57917efc72a03!2sFlorence%2C%20Italie!5e0!3m2!1sfr!2sfr!4v1745401003825!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BT16MJAw1As?si=PHpjU_kqTqs8QAS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="portfolio-description">
+            <p>Hello, moi c'est Manon ! Je suis passionnée de création graphique, photographie et vidéo. J'aimerais vous partager quelques unes de mes créations. </p>
+        </div>
+    </section>
+
+    <!-- Section Contact Minimaliste -->
+    <section class="contact">
+        <p>Pour toute demande de collaboration, veuillez me contacter à <a href="mailto:manon.douay@orange.fr">manon.douay@orange.fr</a>.</p>
+    </section>
+
+    <!-- Titre de la section -->
+    <section class="section-titre">
+      <h2>MON TRAVAIL</h2>
+    </section>
+
+    <!-- Galerie d'images + description à gauche -->
+    <section class="selection-superposee">
+        <div class="texte-selection">
+          <h3>VIDEO<br>PHOTOGRAPHIE<br>DESIGN GRAPHIQUE<br>COMMUNIQUÉS DE PRESSE</h3>
+        </div>
+        <div class="galerie">
+          <img src="images/mouette.png" alt="Photographie Animale">
+          <img src="images/sacs.png" alt="Packshot">
+          <img src="images/Capture d’écran 2025-05-26 à 17.24.48.png" alt="Look 3">
+          <img src="images/menton.png" alt="Look 3">
+          <img src="images/cpr.png" alt="Look 3">
+          <img src="images/cpv.png" alt="Look 3">
+        </div>
+      </section>
+
+      <section class="projet">
+        <div class="projet-image">
+          <img src="images/ikea.png" alt="Photo du projet">
+        </div>
+        <div class="projet-texte">
+          <p>Lorsque je ne suis pas occupée par mes activités scolaires, je propose mes services en freelance dans les domaines de community management, création de contenu visuel. Je propose également des formations pour aprendre à manier les réseaux sociaux, ainsi que les sites de création graphique. </p>
+          <p><strong>Portfolio disponible sur demande.</strong></p>
+      
+          <h3><em>Dernier projet</em></h3>
+          <p><strong>Campagne d'affichage pour l'espace Seconde vie d'IKEA</strong><br>L'objectif : mettre en valeur les services seconde main du grand magasin auprès des jeunes. Notre réponse : ANDRA LIV (Seconde vie en Norvégien). Rien de mieux que des jeux de mots pour marquer les esprits !</p>
+        </div>
+      </section>
+
+      <div class="final-section">
+        <div class="final-left">
+          <h3>Ils me font confiance :</h3>
+          <p class="signature">MANON DOUAY<br><span class="email">manon.douay@orange.fr</span></p>
+        </div>
+        <div class="final-middle">
+          <ul>
+            <li>Community management, 2024 </li>
+            <br>
+            <li>Création de contenu instantané, 2024 & 2025</li>
+            <br>
+            <li>Graphisme, 2025 </li>
+            <br>
+            <li>Relations Presse, 2024 & 2025</li>
+            <br>
+            <li>Cheffe de projet podcast, 2025</li>
+          </ul>
+        </div>
+        <div class="final-right">
+          <p>JFA Motors</p>
+          <p>Salon des Aventuriers</p>
+          <p>Le Petit Efapien</p>
+          <p>CTer&co</p>
+          <p>Parlons Peu, Parlons Bien.</p>
+        </div>
       </div>
 </body>
 </html>

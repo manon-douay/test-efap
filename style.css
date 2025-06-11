@@ -1,45 +1,233 @@
-body{
-    background-color: rgb(238, 244, 231);
-    margin: 0;
-}
-
-
+/* Styles pour la barre de navigation */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #c2d5bb;
-  }
-  
-  .logo {
-    width: 150px;
-  }
-  
-  .link {
-    text-decoration: none;
-    font-size: 24px;
-    background-color: #283a24;
-    color: #ffffff;
-    padding: 16px 32px;
-    border-radius: 4px;
-    margin: 24px;
-  }
-  
-  .links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-    padding-right: 2%;
-  }
-
-.container {
-  width: ;
-  margin: ;
-  display: ;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ff841f; /* Fond semi-transparent pour la nav */
 }
 
-  .maps, .video {
-display: flex;
-justify-content: center;
-margin-top: 24px;
+/* Styles pour le logo */
+.logo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+/* Styles pour les liens centraux */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+/* Effet sur les liens au survol */
+.nav-links a:hover {
+    color: #555;
+}
+
+/* Styles pour la section Portfolio */
+.portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  .portfolio-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 200px;
+    color: #ff841f;
+    line-height: 0.8;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .portfolio-image img {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    max-height: 85%;
+    width: auto;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .portfolio-description p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #000;
+    max-width: 600px;
+    margin-right: auto;
+    margin-top: 70px;
+    z-index: 3;
+    position: relative;
+  }
+
+/* Styles pour la section Contact */
+.contact {
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.contact a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+/* Titre de section "Sélection" */
+.section-titre {
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #ff841f;
+    font-size: 50px;
+    border-bottom: 1px solid #ff841f;
+    width: fit-content;
+  }
+  
+  .selection-superposee {
+    position: relative;
+    height: 500px; /* ajuste selon tes besoins */
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  /*selection principale*/
+  .texte-selection {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 2;
+  }
+  
+  .texte-selection h3 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #ff841f;
+    line-height: 1.2;
+    margin-top: 14%;
+  }
+  
+  .galerie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 15px;
+    padding: 40px;
+    z-index: 1;
+  }
+  
+  .galerie img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .projet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 60px 40px;
+    background-color: #eaeaea;
+    gap: 40px;
+  }
+  
+  .projet-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20%;
+  }
+  
+  .projet-texte {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ff841f;
+    max-width: 600px;
+    padding-left: 30%;
+  }
+  
+  .projet-texte h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 100px;
+  }
+  
+  .projet-texte p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .final-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    color: #ff841f;
+  }
+  
+  .final-left,
+  .final-middle,
+  .final-right {
+    flex: 1;
+  }
+  
+  .final-left h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 400px;
+  }
+  
+  .signature {
+    font-size: 32px;
+  }
+  
+  .signature .email {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+  }
+  
+  .final-middle ul {
+    margin-top: 100px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .final-middle li {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .final-right p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
